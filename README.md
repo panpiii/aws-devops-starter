@@ -22,3 +22,15 @@ This project demonstrates **Infrastructure as Code (IaC)** by automating EC2 ins
 git clone https://github.com/panpiii/aws-devops-starter.git
 cd aws-devops-starter
 
+## 🔧 Managing EC2 Instances
+To stop an instance without deleting it:
+```bash
+aws ec2 stop-instances --instance-ids <INSTANCE_ID>
+
+To restart a stopped instance:
+```bash
+aws ec2 start-instances --instance-ids <INSTANCE_ID>
+
+To permanently delete an instance:
+```bash
+aws ec2 terminate-instances --instance-ids <INSTANCE_ID>  
